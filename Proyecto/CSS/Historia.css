@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Imágenes/585919.jpg);
+}
+
+/* Estilos para el encabezado y la navegación */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo img{
+padding-right: 85%;
+width: 75px;
+height: 75px;
+} 
+
+.margenfalso{
+padding-left: 90px;
+}
+
+.dropdown{
+display:inline-block;
+position: relative;
+}
+
+.dropdown-content{
+display: none;
+position: absolute;
+width: 100%;
+overflow: auto;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown-content a {
+display: block;
+color: white;
+padding: 5px;
+text-decoration: none;
+}
+
+.dropdown-content a:hover {
+color: #FFFFFF;
+background-color: #00A4BD;
+}
+
+div#geneal{
+margin: auto;
+width: 960px;
+height: 800px;
+background-color: white;
+}
+p#colors{
+color: black;    
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+}
+
+nav ul {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: none;
+}
+
+button {
+background-color: #333;
+color:white ;
+border:none;
+font-family: Arial, sans-serif;
+font-size: medium;
+}
+nav ul li {
+display: inline;
+margin-right: 20px;
+}
+
+nav a  {
+text-decoration: none;
+color: white;
+}
+
+/* Estilos para el pie de página */
+footer {
+background-color: #333;
+color: white;
+padding: 10px 0;
+text-align: center;
+}
+/* Estilo para el cuadrado */
+.div1{
+    width: 600px;
+    height: 600px;
+    background-color:#00A4BD;
+    text-align: center;
+    margin: auto    ;
+}

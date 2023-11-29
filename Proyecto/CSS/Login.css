@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Imágenes/585919.jpg);
+}
+
+/* Estilos para el encabezado y la navegación */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo img{
+padding-right: 85%;
+width: 75px;
+height: 75px;
+} 
+
+.margenfalso{
+padding-left: 90px;
+}
+
+.dropdown{
+display:inline-block;
+position: relative;
+}
+
+.dropdown-content{
+display: none;
+position: absolute;
+width: 100%;
+overflow: auto;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown-content a {
+display: block;
+color: white;
+padding: 5px;
+text-decoration: none;
+}
+
+.dropdown-content a:hover {
+color: #FFFFFF;
+background-color: #00A4BD;
+}
+
+p#colors{
+color: black;    
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+}
+
+nav ul {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: none;
+}
+
+button {
+background-color: #333;
+color:white ;
+border:none;
+font-family: Arial, sans-serif;
+font-size: medium;
+}
+nav ul li {
+display: inline;
+margin-right: 20px;
+}
+
+nav a  {
+text-decoration: none;
+color: white;
+}
+
+/* Estilos para las secciones */
+section {
+padding: 73.5px 0;
+text-align: center;
+}
+
+/* Estilos para el pie de página */
+footer {
+background-color: #333;
+color: white;
+padding: 10px 0;
+text-align: center;
+}
+/* Login */
+main{
+   width: 100%;
+   padding: 20px;
+   margin: auto;
+   margin-top: 100px;
+}
+.contenedor__todo{
+   width: 100%;
+   max-width: 800px;
+   margin: auto;
+   position: relative;
+}
+.caja__trasera{
+   width: 100%;
+   padding: 10px 20px;
+   display: flex;
+   justify-content: center;
+   backdrop-filter: blur(10px);
+   background-color: #333;
+   border-radius: 10px;
+}
+.caja__trasera div{
+   margin: 100px 40px;
+   color: white;
+   transition: all 500ms;
+}
+.caja__trasera div p,
+.caja__trasera div button{
+   margin-top: 30px;
+}
+
+.caja__trasera div h3{
+   font-weight: 400;
+   font-size: 26px;
+}
+
+.caja__trasera button{
+   padding: 10px 40px;
+   border: 2px solid rgb(213, 222, 237);
+   background: transparent;
+   font-size: 14px;
+   font-weight: 600;
+   cursor: pointer;
+   color: white;
+   outline: none;
+   transition: all 300ms;
+}
+.caja__trasera button:hover{
+   background: white;
+   color: #46A2FD;
+}
+
+/* Formularios */
+.contenedor__login-register{
+   display: flex;
+   align-items: center;
+   width: 100%;
+   max-width: 380px;
+   position: relative;
+   top: -185px;
+   left: 10px;
+   transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+.contenedor__login-register form{
+   width: 100%;
+   padding: 80px 20px;
+   background: #e0e0e0;
+   position:absolute;
+   border-radius: 20px;
+}
+
+.contenedor__login-register form h2{
+   font-size: 30px;
+   text-align:center;
+   margin-bottom:20px;
+   color:#46A2F9
+}
+.contenedor__login-register form input{
+   width:95%;
+   margin-top:20px;
+   padding:10px;
+   border:none;
+   background: #e0e0e0;
+}
+.contenedor__login-register form button{
+  padding :10px 40px; 
+  margin-top :40px; 
+  border:none; 
+  font-size :14px; 
+  background:#46A2FD; 
+  color:white; 
+  cursor:pointer
+}
+
+.formulario__login{
+  opacity :1; 
+  display:block
+}
+.formulario__register{
+  display:none
+}
+
+/* responsive Design */
+
+@media screen and (max-width :850px){
+
+  .caja__trasera{
+     max-width :350px; 
+     height :300px; 
+     flex-direction :column; 
+     margin:auto
+  }
+  .contenedor__login-register{
+     top :-10px; 
+     left :-5px; 
+     margin:auto
+  }
+  
+  .contenedor__login-register form{
+     position:relative
+  }
+}

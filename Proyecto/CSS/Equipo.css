@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Imágenes/585919.jpg');
+}
+
+/* Estilos para el encabezado y la navegación */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/*menu*/
+.logo img{
+padding-right: 85%;
+width: 75px;
+height: 75px;
+} 
+
+.margenfalso{
+padding-left: 90px;
+}
+
+.dropdown{
+display:inline-block;
+position: relative;
+}
+
+.dropdown-content{
+display: none;
+position: absolute;
+width: 100%;
+overflow: auto;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown-content a {
+display: block;
+color: white;
+padding: 5px;
+text-decoration: none;
+}
+
+.dropdown-content a:hover {
+color: #FFFFFF;
+background-color: #00A4BD;
+}
+
+
+p#colors{
+color: black;    
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+}
+
+nav ul {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: none;
+}
+
+button {
+background-color: #333;
+color:white ;
+border:none;
+font-family: Arial, sans-serif;
+font-size: medium;
+}
+nav ul li {
+display: inline;
+margin-right: 20px;
+}
+
+nav a  {
+text-decoration: none;
+color: white;
+}
+
+/* Estilos para las secciones */
+section {
+padding: 50px 0;
+text-align: center;
+}
+
+section h1 {
+margin-bottom: 20px;
+}
+
+p{
+color:black ;
+text-align: justify;
+}
+/* Estilos para el pie de página */
+footer {
+background-color: #333;
+color: white;
+padding: 10px 0;
+text-align: center;
+}
+.general{
+    width: 640;
+    height: 480;
+}
+/*EQUIPO*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:350px;
+    padding: 0 20px;
+}
+.card-container{
+    display: flex;
+    width: 600px;
+    height: auto;
+    background:#FFFFFF ;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, .2);
+}
+.header{
+    border-right: 1px solid #ddd;
+}
+.descripcion{
+    background: #fbfbfb;
+}
+.header, .descripcion{
+    padding: 20px;
+    text-align: center;
+}
+.header a{
+    position: relative;
+    display: block;
+}
+.header img{
+    width: 100px;
+    height: 100px;
+    border-radius: 58%;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, .06);
+    margin: 20px 30px;
+    transition: .2s;
+}
+.header a:hover img{
+    box-shadow:  0 0 0 12px rgba(0, 0, 0, .1);
+}
+.header h2{
+    color: salmon;
+}
+.header h4{
+    margin-bottom: 20px;
+}
+.descripcion {
+    position: center;
+
+}
+.descripcion p{
+    margin: 20px 30px;
+}
