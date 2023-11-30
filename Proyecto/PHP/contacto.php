@@ -8,27 +8,50 @@
     <title>Contacto</title>
 </head>
 <body>
-    
+<body>
     <header>
-        <nav>
-            <ul id="log_left">
-                <li> <div class="logo"> <img src="../Imágenes/logo.png" alt=""> </div> </li>
-            </ul>
-            <ul id="log_right">
-                <li><a href="../Index.html">Inicio</a></li>
-                <li><a href="../HTML/Productos.html">Productos</a></li>
-                <li class="dropdown">
-                    <a href="#">¿Quienes Somos?</a>
-                    <div class="dropdown-content">
-                        <a href="../HTML/Historia.html">Historia</a> 
-                        <a href="../HTML/Equipo.html">Equipo</a> 
+        <nav class="navbar bg-body-tertiary navbar navbar-expand-lg  rounded "  aria-label="Thirteenth navbar example"">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="../Proyecto/Imágenes/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Sodex Music
+              </a>
+              
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+          
+                  <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+                    <a class="navbar-brand col-lg-3 me-0" href="#"></a>
+                    <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../Proyecto/HTML/Productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../Proyecto/PHP/contacto.php">Contacto</a>
+                         </li>
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Acerca de Nosotros</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="../Proyecto/HTML/Nosotros.html">¿Quienes Somos?</a></li>
+                          <li><a class="dropdown-item" href="../Proyecto/HTML/Equipo.html">Equipo</a></li>
+                          <li><a class="dropdown-item" href="../Proyecto/HTML/Historia.html">Historia</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                      <button class="btn btn-primary">Button</button>
                     </div>
-                </li>                
-                <li><a href="contacto.php">Contacto</a></li>
-                <li><a href="../HTML/Login.html">Login</a></li>
-            </ul>
-            <ul class="margenfalso"> <li> <div> </div></li></ul>
-        </nav>
+                  </div>
+                </div>
+              </nav>
+            </div>
+
     </header>
     <form method="POST"> 
         <div class="contact_form">
