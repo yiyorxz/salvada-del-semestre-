@@ -6,104 +6,152 @@
     <link rel="stylesheet" type="text/css" href="Index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <title> Sodex Music </title>
 
 </head>
 <body>
     <header>
-        <nav>
-            <ul id="log_left">
-                <li> <div class="logo"> <img src="Imágenes/logo.png" alt=""> </div> </li>
-            </ul>
-            <ul id="log_right">
-                <li><a href="Index.html">Inicio</a></li>
-                <li><a href="HTML/Productos.html">Productos</a></li>
-                <li class="dropdown">
-                    <a href="#">¿Quienes Somos?</a>
-                    <div class="dropdown-content">
-                        <a href="HTML/Historia.html">Historia</a> 
-                        <a href="HTML/Equipo.html">Equipo</a> 
+        <nav class="navbar bg-body-tertiary navbar navbar-expand-lg  rounded "  aria-label="Thirteenth navbar example"">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="../Proyecto/Imágenes/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Sodex Music
+              </a>
+              
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+          
+                  <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+                    <a class="navbar-brand col-lg-3 me-0" href="#"></a>
+                    <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../Proyecto/HTML/Productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../Proyecto/PHP/contacto.php">Contacto</a>
+                         </li>
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Acerca de Nosotros</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="../Proyecto/HTML/Nosotros.html">¿Quienes Somos?</a></li>
+                          <li><a class="dropdown-item" href="../Proyecto/HTML/Equipo.html">Equipo</a></li>
+                          <li><a class="dropdown-item" href="../Proyecto/HTML/Historia.html">Historia</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                      <button class="btn btn-primary">Button</button>
                     </div>
-                </li>                
-                <li><a href="PHP/contacto.php">Contacto</a></li>
-                <li><a href="HTML/Login.html">Login</a></li>
-            </ul>
-            <ul class="margenfalso"> <li> <div> </div></li></ul>
-        </nav>
-    </header>
-
-        <section id="inicio">
-            <img src="Imágenes/mini-fondo-preview.png" alt="Sodex Music">
-        </section>
-        <section class="carruselxd">
-        <div class="container-carousel">
-            <h2 class="txth2">Productos mas Vendidos</h2>
-            <div class="carruseles" id="slider">
-                <section class="slider-section">
-                    <img src="./Imágenes/custom-shop-les-paul-standard-1958-reissue-2019-hd-4-161268.webp" alt="1">
-                </section>
-                <section class="slider-section">
-                    <img src="./Imágenes/deann.webp" alt="2">
-                </section>
-                <section class="slider-section">
-                    <img src="./Imágenes/iceman.jpg" alt="3">
-                </section>
-                <section class="slider-section">
-                    <img src="./Imágenes/ironcross2.webp" alt=4>
-                </section>
+                  </div>
+                </div>
+              </nav>
             </div>
-            <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
-            <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
+
+    </header>
+    <div class="container text-center" ><img src="../Proyecto/Imágenes/mini-fondo-preview.png"  alt=""></div>
+
+    <div class="container">
+        <div class="row mb-3 text-center">
+            
+            <div class="col-xxl-4 themed-grid-col"><div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../Proyecto/Imágenes/ironcross2.webp" class="img-fluid" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../Proyecto/Imágenes/iceman.jpg" class="img-fluid" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../Proyecto/Imágenes/deann.webp" class="img-fluid" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../Proyecto/Imágenes/custom-shop-les-paul-standard-1958-reissue-2019-hd-4-161268.webp" class="img-fluid" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div></div>
+            
         </div>
+      </div>
     
         <script src="Index.js"></script>
     </section>
+    <h2>Conciertos</h2>
+    <div class="container text-center">
+    <div class="col-12">
+    <table class="table" >
+        <thead>
+          <tr class="table-dark">
+            <th scope="col">Hora</th>
+            <th scope="col">Banda</th>
+            <th scope="col">Escenario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">18:00</th>
+            <td>Los Haitianos Del Sur</td>
+            <td>Auditorio Principal</td>
+          </tr>
+          <tr>
+            <th scope="row">19:30</th>
+            <td>Los Cuatro</td>
+            <td>Escenario A</td>
+          </tr>
+          <tr>
+            <th scope="row">20:45</th>
+            <td>Cabeza Radio</td>
+            <td>Escenario B</td>
+          </tr>
+          <tr>
+            <th scope="row">22:00</th>
+            <td>MuerteOmega</td>
+            <td>Auditorio Principal</td>
+          </tr>
+          <tr>
+            <th scope="row">23:15</th>
+            <td>Gansos Rosados</td>
+            <td>Escenario C</td>
+          </tr>
+          <tr>
+            <th scope="row">00:30</td>
+            <td>Los charros de Lumaco</td>
+            <td>Escenario A</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
 
-        <h2>Conciertos</h2>
-        <table class="contenedortabla">
-            <thead>
-            <tr>
-                <th>Hora</th>
-                <th>Nombre de la Banda</th>
-                <th>Lugar</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>18:00</td>
-                <td>Los Haitianos Del Sur</td>
-                <td>Auditorio Principal</td>
-            </tr>
-            <tr>
-                <td>19:30</td>
-                <td>Los Cuatro</td>
-                <td>Escenario A</td>
-            </tr>
-            <tr>
-                <td>20:45</td>
-                <td>Cabeza Radio</td>
-                <td>Escenario B</td>
-            </tr>
-            <tr>
-                <td>22:00</td>
-                <td>MuerteOmega</td>
-                <td>Auditorio Principal</td>
-            </tr>
-            <tr>
-                <td>23:15</td>
-                <td>Gansos Rosados</td>
-                <td>Escenario C</td>
-            </tr>
-            <tr>
-                <td>00:30</td>
-                <td>Los charros de Lumaco</td>
-                <td>Escenario A</td>
-            </tr>
-        </table>
-        <script src="Index.JS"></script>
-        <footer>
-            <h6> Todos los derechos reservados a SDXM.ltda </h6>
-            </footer>
-</body>
+
+<div class="b-example-divider"></div>
+
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="Index.html" class="nav-link px-2 text-emphasis">Inicio</a></li>
+      <li class="nav-item"><a href="../Proyecto/HTML/Historia.html" class="nav-link px-2 text-emphasis">Historia</a></li>
+      <li class="nav-item"><a href="../Proyecto/HTML/Equipo.html" class="nav-link px-2 text-emphasis">Equipo</a></li>
+      <li class="nav-item"><a href="../Proyecto/PHP/contacto.php" class="nav-link px-2 text-emphasis">Contacto</a></li>
+      <li class="nav-item"><a href="../Proyecto/HTML/Nosotros.html" class="nav-link px-2 text-emphasis">Acerca de Nosotros</a></li>
+    </ul>
+    <p class="text-center text-emphasis">&copy; Todos los derechos reservados a SDXM.ltda</p>
+  </footer>
+</div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
